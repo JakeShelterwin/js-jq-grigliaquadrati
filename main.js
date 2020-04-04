@@ -14,7 +14,7 @@ var fioriTrovati = 0, soloPrato = 0;
 //genero le celle del documento
 for(var i=0; i<64; i++){
   // append() - Inserts content at the end of the selected elements
-  appoggoContainer.append('<div class="square"></div>');
+  appoggoContainer.append("<div class='square'></div>");
   // console.log("quadrato");
 }
 
@@ -52,8 +52,8 @@ function posizionaFiore () {
   for(var i=0; i<15; i++){
     // eq() Reduce the set of matched elements to the one at the specified index.
     //in soldoni: prendimi l'elemento contenuto in arrayIndici che ha indice i
-    // e aggiungi la classe fiore all'elemento children di appoggioContainer corrispondente
-    appoggoContainer.children().eq(arrayIndici[i]).addClass("fiore");
+    // e aggiungi la classe fiore all'elemento square corrispondente
+    $(".square").eq(arrayIndici[i]).addClass("fiore");
   }
 }
 //la utilizzo subito
