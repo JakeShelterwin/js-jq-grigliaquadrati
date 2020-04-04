@@ -14,12 +14,9 @@ var fioriTrovati = 0, soloPrato = 0;
 //genero le celle del documento
 for(var i=0; i<64; i++){
   // append() - Inserts content at the end of the selected elements
-  appoggoContainer.append("<div></div>");
+  appoggoContainer.append('<div class="square"></div>');
   // console.log("quadrato");
 }
-
-//aggiungo a ogni casella creata dal for precedente la classe square
-appoggoContainer.children().addClass("square");
 
 //La funzione genera un array di 15 valori diversi
 function generaArray (){
